@@ -1,0 +1,242 @@
+html {
+  background-image: url("https://images7.alphacoders.com/288/thumbbig-288712.webp");
+  background-repeat: repeat;
+  background-attachment: local;
+  background-size: cover;
+  overflow-x: hidden;
+}
+body {
+  padding: 0%;
+  margin: 0%;
+}
+/* HEADER */
+.cabecera {
+  position: sticky;
+  top: 0;
+  padding: 3px;
+  background-color: rgba(24, 24, 24);
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cabecera > div > p {
+  padding: 0;
+  margin-top: 1px;
+  color: aliceblue;
+  font-family: "Raleway";
+  font-size: 2.5rem;
+}
+#logoTBH {
+  padding-top: 1px;
+  padding-left: 10px;
+  width: 45px;
+}
+.carrito {
+  padding-right: 8px;
+}
+#botonCarrito {
+  border-radius: 20%;
+}
+#botonCarrito > img {
+  margin-top: 1px;
+  width: 40px;
+}
+#botonCarrito:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+/* PRODUCTOS */
+
+.contenedorPrincipal {
+  margin: 2rem 0rem 0rem 0rem;
+  padding: 0;
+  height: 105vh;
+}
+#contenedorProductos {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.producto > img {
+  margin-left: 10%;
+  width: 150px;
+  height: 300px;
+}
+.producto > h2 {
+  font-size: 32px;
+  font-family: "Raleway";
+  text-align: center;
+  color: aliceblue;
+}
+.producto > p {
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.645);
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-family: "Raleway";
+  width: 200px;
+  height: 20vh;
+  text-align: center;
+}
+.producto > h4 {
+  margin-bottom: 5px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.645);
+  margin-top: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Raleway";
+  text-align: center;
+  color: white;
+}
+.producto > div {
+  text-align: center;
+}
+#comprar-carrito,
+.producto > div > button {
+  background-color: rgba(4, 105, 4, 0.914);
+  border-color: green;
+  font-size: 14px;
+  font-family: "Raleway";
+  color: white;
+}
+.producto > div > button:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+/* CARRITO */
+.botones-carrito {
+  align-items: center;
+  margin-top: 15px;
+}
+.boton-eliminar,
+.boton-sumar,
+.boton-restar,
+#cerrar-carrito {
+  text-align: end;
+  border: none;
+  background-color: transparent !important;
+}
+.boton-eliminar > img,
+.boton-sumar > img,
+.boton-restar > img,
+#cerrar-carrito > img {
+  width: 30px;
+}
+
+#pieDelCarrito > #comprar-carrito {
+  width: 25%;
+  height: 2rem;
+}
+.boton-eliminar:hover,
+.boton-sumar:hover,
+.boton-restar:hover,
+#cerrar-carrito > img:hover,
+#comprar-carrito:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+#header-carrito,
+#pieDelCarrito {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#pieDelCarrito > p {
+  font-size: 20px;
+}
+h2 {
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 44px;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0.5rem;
+  width: 100%;
+  height: 100vh;
+  font-family: "Raleway";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-carrito {
+  background-color: rgba(0, 0, 0, 0.974);
+  position: relative;
+  min-width: 600px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+
+.itemCarrito {
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr 1fr;
+}
+
+/* FOOTER */
+.footer {
+  width: 100vw;
+  height: 2.8rem;
+  background-color: rgba(24, 24, 24);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.parrafoFooter {
+  text-align: center;
+  padding-left: 15px;
+  margin: inherit;
+  font-size: 0.9rem;
+  font-family: monospace;
+  color: antiquewhite;
+}
+.footer > div > li {
+  padding-right: 10px;
+  padding-top: 10px;
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  width: 5em;
+  bottom: 12px;
+}
+#imIg,
+#imTw,
+#imGH,
+#imLi {
+  width: 30px;
+}
+.footer > div > li:hover {
+  scale: 1.2;
+}
