@@ -11,7 +11,6 @@ botonAbrir.addEventListener("click", () => {
       title: "El carrito está vacío",
       background: "rgba(24, 24, 24)",
       color: "white",
-      backdrop: true,
       timer: 1300,
       timerProgressBar: true,
       toast: true,
@@ -22,6 +21,7 @@ botonAbrir.addEventListener("click", () => {
     contenedorModal.classList.toggle("modal-active");
   }
 });
+
 botonCerrar.addEventListener("click", () => {
   contenedorModal.classList.toggle("modal-active");
 });

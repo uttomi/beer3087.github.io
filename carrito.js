@@ -26,11 +26,7 @@ function renderizarCarrito(bebidaEnCarrito) {
 
 function validarDni(dni) {
   let validacionDni = /^\d{8}(?:[-\s]\{4})?$/;
-  if (validacionDni.test(dni)) {
-    return true;
-  } else {
-    return false;
-  }
+  return validacionDni.test(dni) ? true : false;
 }
 /* OPERACIONES CON EL CARRITO */
 
